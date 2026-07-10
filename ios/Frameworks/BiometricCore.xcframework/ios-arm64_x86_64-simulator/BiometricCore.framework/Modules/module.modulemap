@@ -1,0 +1,5 @@
+framework module BiometricCore {
+  umbrella header "BiometricCore.h"
+  export *
+  module * { export * }
+}
