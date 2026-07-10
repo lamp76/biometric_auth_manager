@@ -179,7 +179,7 @@
       "name": "biometric_auth_manager",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.4"
     }
   ],
   "generator": "pub",

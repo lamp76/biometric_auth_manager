@@ -4,6 +4,11 @@ This roadmap outlines the future direction and milestones for the `biometric_aut
 
 ---
 
+## Milestone 0: Core Biometric & Passkey Support (Completed)
+- [x] **Basic Biometric Authentication:** Native Fingerprint and FaceID authentication on Android & iOS.
+- [x] **Hardware & Availability Detection:** API to check hardware support and retrieve biometric types (Fingerprint, FaceID, Passkeys) on Android, iOS, and Web.
+- [x] **WebAuthn Passkey Support:** Web-based Passkey registration (attestation) and login (assertion) flow.
+
 ## Milestone 1: Fallback & Recovery Flows
 - [ ] **PIN/Pattern/Password Fallback:** Integrate system-level security credential inputs (device passcode) as alternative authentication when biometrics fail or are locked.
 - [ ] **Custom Biometric Lockout Handling:** Expose specialized exception types and hooks to gracefully detect and handle temporary or permanent biometric lockouts in the application.
