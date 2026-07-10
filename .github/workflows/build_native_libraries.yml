@@ -54,21 +54,21 @@ jobs:
 
       - name: Build Device Archive
         run: |
+          cd native_src/ios/BiometricCore
           xcodebuild archive \
-            -packagePath native_src/ios/BiometricCore \
             -scheme BiometricCore \
             -destination "generic/platform=iOS" \
-            -archivePath "native_src/ios/BiometricCore/archives/BiometricCore-iOS.xcarchive" \
+            -archivePath "archives/BiometricCore-iOS.xcarchive" \
             SKIP_INSTALL=NO \
             BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
       - name: Build Simulator Archive
         run: |
+          cd native_src/ios/BiometricCore
           xcodebuild archive \
-            -packagePath native_src/ios/BiometricCore \
             -scheme BiometricCore \
             -destination "generic/platform=iOS Simulator" \
-            -archivePath "native_src/ios/BiometricCore/archives/BiometricCore-iOS-Simulator.xcarchive" \
+            -archivePath "archives/BiometricCore-iOS-Simulator.xcarchive" \
             SKIP_INSTALL=NO \
             BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
