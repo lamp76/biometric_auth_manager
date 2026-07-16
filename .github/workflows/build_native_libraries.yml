@@ -39,7 +39,7 @@ jobs:
       - name: Copy AAR to Plugin
         run: |
           mkdir -p android/libs
-          cp native_src/android/build/outputs/aar/android-release.aar android/libs/biometric_core.aar
+          cp native_src/android/build/outputs/aar/biometric_core-release.aar android/libs/biometric_core.aar
 
       - name: Upload Android Artifact
         uses: actions/upload-artifact@v4
