@@ -76,8 +76,8 @@ jobs:
         run: |
           mkdir -p ios/Frameworks
           xcodebuild -create-xcframework \
-            -framework native_src/ios/BiometricCore/archives/BiometricCore-iOS.xcarchive/Products/Library/Frameworks/BiometricCore.framework \
-            -framework native_src/ios/BiometricCore/archives/BiometricCore-iOS-Simulator.xcarchive/Products/Library/Frameworks/BiometricCore.framework \
+            -framework native_src/ios/BiometricCore/archives/BiometricCore-iOS.xcarchive/Products/usr/local/lib/BiometricCore.framework \
+            -framework native_src/ios/BiometricCore/archives/BiometricCore-iOS-Simulator.xcarchive/Products/usr/local/lib/BiometricCore.framework \
             -output ios/Frameworks/BiometricCore.xcframework
 
       - name: Upload iOS Artifact
